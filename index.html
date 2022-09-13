@@ -16,29 +16,17 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header__title">
-      <h2>
-        SPLI<br />
-        TER
-      </h2>
+      <h2>SPLI <br />TTER</h2>
     </header>
 
     <section class="calculator-container">
       <div class="inputs-section">
-        <label for="bill" class="inputs-section__bill--label">Bill</label>
+        <label for="bill" class="inputs-section__bill-label">Bill</label>
         <input
-          type="inputs-section__bill-input"
+          class="inputs-section__bill-input"
           id="bill"
           type="number"
           value="0"
@@ -51,17 +39,16 @@
           <button class="btns__button">15%</button>
           <button class="btns__button">25%</button>
           <button class="btns__button">50%</button>
-          <input type="number" class="btns__custom" placeholder="Custom" />
+          <input class="btns__custom" type="number" placeholder="Custom" />
         </fieldset>
 
         <label for="people" class="inputs-selection__people-label"
-          >Number of People <span>"alert"</span></label
-        >
-
+          >Number of people <span id="alert"></span
+        ></label>
         <input
+          class="inputs-selection__people-input"
           type="number"
           id="people"
-          class="inputs-selection__people-input"
           value="5"
         />
       </div>
@@ -76,8 +63,8 @@
           <p class="results__tip-value">0</p>
 
           <div>
-            <div class="results__total-amount">Total</div>
-            <div class="results__total-person">/ person</div>
+            <p class="results__total-amount">Total</p>
+            <p class="results__total-person">/ person</p>
           </div>
 
           <p class="results_total-value">0</p>
@@ -93,7 +80,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Kerim</a>.
     </div>
-
-    <script src="./app.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
