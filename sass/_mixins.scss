@@ -1,0 +1,15 @@
+@use "./variables";
+
+@mixin label {
+  display: block;
+  color: variables.$Dark-grayish-cyan;
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+
+@mixin input($icono) {
+  font-family: variables.$font;
+  font-size: 1rem;
+  text-align: right;
+  caret-color: variables.$Strong-cyan;
+}
