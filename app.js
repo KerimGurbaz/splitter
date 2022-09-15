@@ -90,8 +90,6 @@ reset.addEventListener("click", ()=>{
 
 });
 
-
-
 function calculateTip(){
     tipResult.innerText = ((billNumber * tipValue) /100 /peopleNumber).toFixed(2);
 
